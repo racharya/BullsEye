@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var currentValue: Int = 0
+    var currentValue: Int = 0 //currentValue is "Instance Variable"
+    @IBOutlet weak var slider: UISlider! //instance variable too, outlets
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentValue = lroundf(slider.value)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
