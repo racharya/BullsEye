@@ -13,10 +13,12 @@ class ViewController: UIViewController {
     var currentValue: Int = 0 //currentValue is "Instance Variable"
     var targetValue: Int = 0
     @IBOutlet weak var slider: UISlider! //instance variable too, outlets
+    @IBOutlet weak var targetLabel: UILabel! 
     
     override func viewDidLoad() {// this method happens when the app starts up
         super.viewDidLoad()
         startNewRound()
+        updateLabels()
         
 //        currentValue = lroundf(slider.value)
 //        targetValue = 1 + Int(arc4random_uniform(100))//arc4random_uniform generates 0 to 99 so 1 is added to make it 1 to 100
@@ -36,15 +38,21 @@ class ViewController: UIViewController {
     alert.addAction(action)
         presentViewController(alert, animated: true, completion: nil)
         startNewRound()
+        updateLabels()
     }
     
     @IBAction func sliderMoved(slider: UISlider){
        currentValue = lroundf(slider.value)//lroundf= rounds decimal number to the nearest whole number
     }
-    
+    /* Calculates a new random number and then resets the position of the slider */
     func startNewRound(){
         targetValue = 1 + Int(arc4random_uniform(100))
         currentValue = 50
         slider.value = Float(currentValue)
+    }
+    
+    func updateLabels(){
+        targetLabel.text = String(targetValue)
+        //above line can be written as: targetLabel.text = "\(targetValue)"
     }
     }
