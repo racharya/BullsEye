@@ -76,12 +76,23 @@ class ViewController: UIViewController {
         //        let message = "The value of the slider is: \(currentValue)" + "\n The target value is:\(targetValue)" +
         //        "\nThe difference is \(difference)"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        
+        // handler tells the alert how to dismiss or it is the alert dismissed event
+        // if handler is nil meaning nothing happens
+        // currently handler has a "closure"= method without a name
+        let action = UIAlertAction(title: "OK", style: .Default, handler:
+            {
+                action in
+                self.startNewRound()
+                self.updateLabels()
+            }
+        )
         
         alert.addAction(action)
+        
+        //making alert visible
         presentViewController(alert, animated: true, completion: nil)
-        startNewRound()
-        updateLabels()
+        
     }
     
     @IBAction func sliderMoved(slider: UISlider){
