@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="15w-46-Ojp"/>
+                                    <action selector="showAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2MH-ad-V4H"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put the Bull's Eye as close as you can to:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iZ-5d-fxM">
@@ -96,6 +96,7 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="roundLabel" destination="GW0-7M-Q8l" id="2Cq-Vf-3PI"/>
                         <outlet property="scoreLabel" destination="OYe-u1-dik" id="zQb-Ub-X5v"/>
                         <outlet property="slider" destination="kxc-hc-eId" id="hiC-wu-zg3"/>
                         <outlet property="targetLabel" destination="Hny-bu-Xws" id="rsc-Z5-sib"/>
@@ -103,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="461"/>
+            <point key="canvasLocation" x="129" y="260"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
