@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800388DE1B20FD0500014A05 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800388DC1B20FD0500014A05 /* Default-568h@2x.png */; };
+		800388DF1B20FD0500014A05 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800388DD1B20FD0500014A05 /* Default@2x.png */; };
 		8005FFC31B07C40300FDB7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005FFC21B07C40300FDB7E1 /* AppDelegate.swift */; };
 		8005FFC51B07C40300FDB7E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005FFC41B07C40300FDB7E1 /* ViewController.swift */; };
 		8005FFC81B07C40300FDB7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8005FFC61B07C40300FDB7E1 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		800388DC1B20FD0500014A05 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		800388DD1B20FD0500014A05 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8005FFBD1B07C40300FDB7E1 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8005FFC11B07C40300FDB7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8005FFC21B07C40300FDB7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		8005FFBF1B07C40300FDB7E1 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				800388DC1B20FD0500014A05 /* Default-568h@2x.png */,
+				800388DD1B20FD0500014A05 /* Default@2x.png */,
 				8065FFD81B20EC4B002B7E02 /* BullsEye.html */,
 				8005FFC21B07C40300FDB7E1 /* AppDelegate.swift */,
 				8005FFC41B07C40300FDB7E1 /* ViewController.swift */,
@@ -198,9 +204,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800388DF1B20FD0500014A05 /* Default@2x.png in Resources */,
 				8005FFC81B07C40300FDB7E1 /* Main.storyboard in Resources */,
 				8065FFD91B20EC4B002B7E02 /* BullsEye.html in Resources */,
 				8005FFCD1B07C40300FDB7E1 /* LaunchScreen.xib in Resources */,
+				800388DE1B20FD0500014A05 /* Default-568h@2x.png in Resources */,
 				8005FFCA1B07C40300FDB7E1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
